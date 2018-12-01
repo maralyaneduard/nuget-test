@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using LoggerEMN;
 using System.Web.Mvc;
 
 namespace testApp.Controllers
@@ -10,6 +7,7 @@ namespace testApp.Controllers
     {
         public ActionResult Index()
         {
+            Logger logger = new Logger();
             return View();
         }
 
